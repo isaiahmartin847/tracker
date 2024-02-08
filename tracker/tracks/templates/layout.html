@@ -14,28 +14,28 @@
   <body class="primary-color">
 
 
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="https://www.nps.gov/yell/learn/nature/images/TrackDeer.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'track' %}">Track</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
-              </li>
-            </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://www.nps.gov/yell/learn/nature/images/TrackDeer.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'track' %}">Track</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </nav>
-
+      </nav>
+  </header>
 
 
     {% block body %}
@@ -43,33 +43,37 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <footer class="bg-dark text-white mt-4">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>About Tracks</h5>
+            <p>This web application allows users to track their favorite wildlife. Explore different tracking features and learn more about wildlife conservation.</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="{% url 'index' %}" class="text-white">Home</a></li>
+              <li><a href="{% url 'track' %}" class="text-white">Track</a></li>
+              <li><a href="{% url 'about' %}" class="text-white">About</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>Email: isaiahmartin847@gmail.com</li>
+              <li>Phone: 406-310-6258</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center py-3">
+          <p>&copy; 2023 Tracks. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </html>
+
   </body>
-  <footer class="bg-dark text-white mt-4">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>About Tracks</h5>
-          <p>This web application allows users to track their favorite wildlife. Explore different tracking features and learn more about wildlife conservation.</p>
-        </div>
-        <div class="col-md-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="{% url 'index' %}" class="text-white">Home</a></li>
-            <li><a href="{% url 'track' %}" class="text-white">Track</a></li>
-            <li><a href="{% url 'about' %}" class="text-white">About</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Contact Us</h5>
-          <ul class="list-unstyled">
-            <li>Email: isaiahmartin847@gmail.com</li>
-            <li>Phone: 406-310-6258</li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center py-3">
-        <p>&copy; 2023 Tracks. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
 </html>
