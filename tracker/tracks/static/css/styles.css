@@ -1,18 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1.3rem;
+}
+
 .primary-color {
     background-color: #848A9C;
 }
 
-
-.headerText {
-    margin-bottom: 600px;
-    
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding:0 2rem;
 }
-
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid black; /* Adjust color and size as needed */
-    margin-left: 178px;
-  }
