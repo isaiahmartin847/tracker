@@ -67,7 +67,10 @@ body {
     border-top: 30px solid black; /* Adjust size and color as needed */
   }
 
-
+img {
+    width: 100%;
+    height: 100%;
+}
 
 
 .card {
