@@ -70,8 +70,11 @@
           document.querySelectorAll('[data-aos="fade-right"]').forEach(function(element) {
               element.setAttribute('data-aos', 'fade-down');
           });
-      } else {
           document.querySelectorAll('[data-aos="fade-left"]').forEach(function(element) {
+              element.setAttribute('data-aos', "fade-down");
+          })
+      } else {
+          document.querySelectorAll('[data-aos="fade-down"]').forEach(function(element) {
               element.setAttribute('data-aos', 'fade-right');
           });
       }
