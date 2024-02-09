@@ -15,29 +15,17 @@
   <body class="primary-color">
 
 
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="https://www.nps.gov/yell/learn/nature/images/TrackDeer.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'track' %}">Track</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
-
   
+  <nav>
+    <div class="logo">
+      <img class="logo-img" src="https://www.nps.gov/yell/learn/nature/images/TrackDeer.png" alt="logo">
+    </div>
+    <div class="nav-object">
+      <a class="nav-bit first-bit" href="{% url 'index' %}">Home</a>
+      <a class="nav-bit" href="{% url 'track' %}">Track</a>
+      <a class="nav-bit" href="{% url 'about' %}">About</a>
+    </div>
+  </nav>
     {% block body %}
     {% endblock %}
   
@@ -76,6 +64,20 @@
   </html>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
+  window.addEventListener('resize', function() {
+      if (window.innerWidth < 700) {
+          document.querySelectorAll('[data-aos="fade-right"]').forEach(function(element) {
+              element.setAttribute('data-aos', 'fade-down');
+          });
+      } else {
+          document.querySelectorAll('[data-aos="fade-left"]').forEach(function(element) {
+              element.setAttribute('data-aos', 'fade-right');
+          });
+      }
+  });
+
+
     AOS.init({
       offset: 225,
       duration: 1500,
