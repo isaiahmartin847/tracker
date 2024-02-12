@@ -10,15 +10,6 @@ function idTracks() {
 
 
 
-window.addEventListener('resize', function() {
-    if (this.window.innerWidth < 700){
-        console.log("mobel response")
-    }
-    else {
-        console.log("pc response")
-    }
-})
-
 
 window.addEventListener('resize', function() {
     if (this.window.innerWidth < 700) {

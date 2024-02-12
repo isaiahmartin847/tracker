@@ -135,3 +135,11 @@ nav {
 .nav-bit:hover {
  background-color: #D4E1E9;
 }
+
+
+.about_title {
+    border: solid 3px black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
