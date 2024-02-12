@@ -63,30 +63,8 @@
     </footer>
   </html>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
 
-  window.addEventListener('resize', function() {
-      if (window.innerWidth < 700) {
-          document.querySelectorAll('[data-aos="fade-right"]').forEach(function(element) {
-              element.setAttribute('data-aos', 'fade-down');
-          });
-          document.querySelectorAll('[data-aos="fade-left"]').forEach(function(element) {
-              element.setAttribute('data-aos', "fade-down");
-          })
-      } else {
-          document.querySelectorAll('[data-aos="fade-down"]').forEach(function(element) {
-              element.setAttribute('data-aos', 'fade-right');
-          });
-      }
-  });
-
-
-    AOS.init({
-      offset: 225,
-      duration: 1500,
-    });
-  </script>
-  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
 
   </script>
   </body>

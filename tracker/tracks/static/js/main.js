@@ -1,5 +1,5 @@
 
-console.log("js loaded")
+console.log("js updated")
 
 
 function idTracks() {
@@ -13,5 +13,10 @@ window.addEventListener('resize', function() {
         console.log("mobel response")
     }
 })
+
+AOS.init({
+    offset: 225,
+    duration: 1500,
+  });
 
 
