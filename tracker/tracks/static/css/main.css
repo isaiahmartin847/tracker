@@ -143,3 +143,8 @@ nav {
     justify-content: center;
     padding: 30px;
 }
+
+.main-body {
+    border: solid 3px black;
+    height: 100%;
+}
