@@ -1,3 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+
+
+body {
+    font-size: 1.3rem;
+    background-color: #a2afb8;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.main-header {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    pad: 2rem;
+}
+
+.main-header .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+
+}
+.main-header .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    margin-bottom: 25px;
+}
+
+.main-header h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; /* Adjust size as needed */
+    border-right: 20px solid transparent; /* Adjust size as needed */
+    border-top: 30px solid black; /* Adjust size and color as needed */
+  }
+
+img {
+    width: 100%;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 300px;
+}
+
+
+.card > div {
+    padding: 2rem;
+}
+
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+@media(max-width: 700px){
+
+    .card {
+        display: block;
+    }
+    .section-text {
+        [data-aos="fade-right"] {
+            /* Change the data-aos value to a different animation or effect */
+            animation-name: fade-left;
+        }
+    
+    }
+}
+
+.logo-img {
+    width: 35px;
+    height: inherit;
+    padding: 4px;
+}
+
+nav {
+    border-bottom: solid  2px black ;
+    display: flex;
+}
+
+.nav-bit {
+    padding-top: 50px;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    border-right: solid 2px black;
+
+}
+
+.first-bit{
+    border-left: solid 2px black;
+}
+
+
+.nav-bit:hover {
+ background-color: #D4E1E9;
+}
+
+
+.about_title {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+
+
 .child {
     margin-top: 100px;
     display: flex;
@@ -34,3 +182,4 @@
     justify-content: center;
     margin-top: 30px;
 }
+
