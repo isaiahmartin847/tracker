@@ -138,14 +138,8 @@ nav {
 
 
 .about_title {
-    border: solid 3px red;
     display: flex;
     justify-content: center;
     padding: 30px;
     margin: 20px;
-}
-
-.main-body {
-    border: solid 3px black;
-    
 }
