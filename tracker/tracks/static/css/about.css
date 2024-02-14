@@ -188,3 +188,16 @@ nav {
     padding: 10px;
 }
 
+.tech-list a{
+    color: black;
+    text-decoration: none;
+}
+
+.tech-list a:hover {
+    color: white;
+}
+
+.tech-list li:hover {
+    background-color: #2e3942;
+    border-radius: 10px;
+}
