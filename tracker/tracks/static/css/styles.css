@@ -8,7 +8,8 @@
 
 body {
     font-size: 1.3rem;
-    background-color: #a2afb8;
+    /* background-color: #a2afb8; */
+    
 }
 
 
@@ -106,6 +107,11 @@ body {
         }
     
     }
+    .child {
+        flex-direction: column;
+    }
+    
+    
 }
 
 .logo-img {
@@ -157,6 +163,7 @@ nav {
 
 .child1 {
     margin-left: 10vw;
+    
 }
 
 .child2 {
@@ -201,3 +208,15 @@ nav {
     background-color: #2e3942;
     border-radius: 10px;
 }
+
+
+.tracker-main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
